@@ -18,4 +18,6 @@ switch (lang) {
         month =  "Місяць: Janvier";
         console.log(month);
         break;
+    default:
+        console.log("Введено неправильну мову!")
 }
