@@ -1,5 +1,5 @@
 const  myNewArrowFunction = function(...args) {
-   return args;
+   console.log(args);
 };
 
 myNewArrowFunction("Js", "Python", "Java", "PHP", "C++");
