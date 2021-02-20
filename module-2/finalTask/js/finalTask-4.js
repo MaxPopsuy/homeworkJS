@@ -1,32 +1,19 @@
-const formatString = function(string) {
-    
-    const arrString = string.split("");
+const formatString = function (string) {
+  let result = "Строка не отформатированна";
+  let message = string;
 
-    for (let i = 0; i < arrString.length; i++){
-        if (arrString.length >= 40){
-            const newArr = arrString.splice(39, arrString.length - 40);
-            console.log(newArr);
-        }
-    }
+  if (string.length > 40) {
+    message = `${string.slice(0, 39)}...`;
+    result = "Строка отформатированна";
+  }
+  console.log(result);
+  return message;
+};
 
-    
-  };
-  
-  /*
-   * Вызовы функции для проверки работоспособности твоей реализации.
-   */
-formatString('Curabitur ligula sapien, tincidunt non.');
-  // вернется оригинальная строка
-  
-formatString('Vestibulum facilisis, purus nec pulvinar iaculis.');
-  // вернется форматированная строка
-  
-  console.log(formatString('Curabitur ligula sapien.'));
-  // вернется оригинальная строка
-  
-  console.log(
-    formatString(
-      'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
-    ),
-  );
-  // вернется форматированная строка
+console.log(formatString("Curabitur ligula sapien."));
+
+console.log(
+  formatString(
+    "Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."
+  )
+);
