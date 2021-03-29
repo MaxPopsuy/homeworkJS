@@ -3,7 +3,13 @@ const salaries = {
     Ann: 160,
     Pete: 130
 };
+const salarie = Object.entries(salaries);
 
-const sum = salaries.John + salaries.Ann + salaries.Pete;
+let total = 0;
 
-console.log(`Сумма: ${sum}`);
+for(let i=0; i < salarie.length; i++){
+    total += salarie[i][1];
+    console.log(`Name: ${salarie[i][0]}; Salarie: ${salarie[i][1]}`);
+}
+
+console.log(`Сумма: ${total}`);

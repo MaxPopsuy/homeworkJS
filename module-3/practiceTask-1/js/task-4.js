@@ -8,7 +8,11 @@ const cafe= {
     
 };
 
-console.log(Object.entries(cafe));
+const cafeKeys = Object.keys(cafe);
+
+for(let i = 0; i<cafeKeys.length; i++){
+    console.log(`${cafeKeys[i]}: ${Object.values(cafe)[i]}`);
+}
 
 console.log(`Площадь: ${cafe.width * cafe.height}`);
 

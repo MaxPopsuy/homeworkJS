@@ -17,14 +17,9 @@ const getAllPropValues = function (arr, prop) {
             }
             
         }
-        
-        
-
     });
     return requestArr;
     
-
-
 };
 
 
