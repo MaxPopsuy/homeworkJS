@@ -1,4 +1,6 @@
-export default [
+let usersArr;
+
+export default usersArr = [
   {
     id: '701b29c3-b35d-4cf1-a5f6-8b12b29a5081',
     name: 'Moore Hensley',
